@@ -1,0 +1,6 @@
+{
+    /*Vim Settings*/
+    /*Simply give the location of your '.vimrc' file.*/
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/Users/jameshawley/.vimrc"
+}
