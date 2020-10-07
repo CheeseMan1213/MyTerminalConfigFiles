@@ -36,3 +36,17 @@ imap <Up>    <Nop>
 imap <Down>  <Nop>
 imap <Left>  <Nop>
 imap <Right> <Nop>
+" Adjusting the font size.
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 26
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h26
+  elseif has("gui_win32")
+    set guifont=Consolas:h26:cANSI
+  endif
+endif
+ 
+" Fixes backspace issues
+set backspace=2
+set backspace=indent,eol,start
