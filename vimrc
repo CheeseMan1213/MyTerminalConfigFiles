@@ -3,6 +3,10 @@
 
 " Enables syntax highlighting.
 syntax on
+" Enables line wrapping.
+set wrap
+" Sets line wrapping to occur such that words stay together.
+set linebreak
 " Adds the feature where the cursor is moved to the middle of braces automatically whenever
 " various types of braces are initiated.
 inoremap <> <><Left>
