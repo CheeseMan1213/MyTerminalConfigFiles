@@ -55,3 +55,7 @@ Shift-5 = (prerequiset = cursor on some sort of brace) automatically jump betwee
 
 zz = Centers your view
 When he was talking about the 'zz' key binding, he did not mean zz takes you to the center of the doc, he meant zz centers the cursor on the page where you currently at.
+
+Shift-8 = jump to next occurence of word. To continue forward, press 'n' and reverse with 'N'
+
+
