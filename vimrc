@@ -1,7 +1,7 @@
 " Works cited link = 
 " https://medium.com/@sidneyliebrand/a-collection-of-vim-key-binds-4d227c9a455
 " Tells Vim to use the system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
 " Enables syntax highlighting.
 syntax on
 " Enables line wrapping.
