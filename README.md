@@ -58,4 +58,4 @@ When he was talking about the 'zz' key binding, he did not mean zz takes you to 
 
 Shift-8 = jump to next occurence of word. To continue forward, press 'n' and reverse with 'N'
 
-
+. = repeat last vim command. For example, if you were to use 'dd' to delete a line, you could use '.' after that to keep deleting lines.
