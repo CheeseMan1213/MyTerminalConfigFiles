@@ -84,3 +84,5 @@ set autoindent
 " Added the 'smart' stuff to auto indent.
 set smartindent
 
+" Enable spell checking for plaintext files only
+autocmd FileType text setlocal spell
