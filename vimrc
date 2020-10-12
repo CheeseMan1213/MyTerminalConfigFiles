@@ -74,3 +74,13 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
+color default
+set cursorline
+hi CursorLine term=bold cterm=bold  guibg=Grey40
+
+" Enables auto indent.
+set autoindent
+" Added the 'smart' stuff to auto indent.
+set smartindent
+
