@@ -4,6 +4,15 @@
 set clipboard=unnamed
 " Enables syntax highlighting.
 syntax on
+
+" Turns off the error bells, like when you hit the end of the line.
+set noerrorbells
+
+" Sets 'tab' to work the way I want.
+set shiftwidth=2 softtabstop=2 expandtab
+" Makes it such that searching begins right away, instead of needing to hit enter first.
+set incsearch
+
 " Enables line wrapping.
 set wrap
 " Sets line wrapping to occur such that words stay together.
@@ -79,8 +88,6 @@ color default
 set cursorline
 hi CursorLine term=bold cterm=bold  guibg=Grey40
 
-" Enables auto indent.
-set autoindent
 " Added the 'smart' stuff to auto indent.
 set smartindent
 
