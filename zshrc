@@ -35,6 +35,6 @@ export AWS_CONFIG_FILE=$HOME/.aws/config
 
 alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
-alias issb='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppBackend/IssueTrackingAppBackend'
+alias issb='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppBackend'
 alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppInfrastructure'
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
