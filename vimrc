@@ -1,6 +1,9 @@
 " Works cited link = 
 " https://medium.com/@sidneyliebrand/a-collection-of-vim-key-binds-4d227c9a455
 " Tells Vim to use the system clipboard
+" Turn line numbers on
+set nu
+
 set clipboard=unnamed
 " Enables syntax highlighting.
 syntax on
@@ -9,7 +12,7 @@ syntax on
 set noerrorbells
 
 " Sets 'tab' to work the way I want.
-set shiftwidth=2 softtabstop=2 expandtab
+set shiftwidth=4 softtabstop=4 tabstop=4
 " Makes it such that searching begins right away, instead of needing to hit enter first.
 set incsearch
 
