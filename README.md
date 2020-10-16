@@ -59,3 +59,18 @@ When he was talking about the 'zz' key binding, he did not mean zz takes you to 
 Shift-8 = jump to next occurence of word. To continue forward, press 'n' and reverse with 'N'
 
 . = repeat last vim command. For example, if you were to use 'dd' to delete a line, you could use '.' after that to keep deleting lines.
+
+Shift-h = snap cursor to top of window.
+
+Shift-m = snap cursor to the middle of the window.
+
+Shift-l = snap cursor to the bottom most position of where the window is currently positioned.
+
+Ctrl-e = It is like scrolling. This will scroll down. I have been scrolling with JNK this whole time but obviously this actually changes the position of the cursor to another line. This one moves the whole screen while leaving the cursor on the line it was on.
+
+Ctrl-y = Scroll window up.
+
+e = moves ahead by words leaving you at the end of the word.
+
+w = moves ahead by words leaving you at the beginning of the word.
+
