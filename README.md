@@ -74,3 +74,4 @@ e = moves ahead by words leaving you at the end of the word.
 
 w = moves ahead by words leaving you at the beginning of the word.
 
+mk = store a 'mark' in the 'k' register, then press backtick 'k' in order to activate the mark. This combo of commands will allow to to mark a spot in the file and be able to always return to that spot in the file.
