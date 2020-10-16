@@ -1,6 +1,10 @@
 # MyTerminalConfigFiles
 In this git repository, I will be storing the various configuration files that I would use to configure things such as Vim and other terminal configuration files.
 
+karabiner-elements config tutorials:
+
+https://medium.com/@pechyonkin/how-to-map-capslock-to-control-and-escape-on-mac-60523a64022b
+
 Vim commands:
 
 Added by me to the .vimrc file.
