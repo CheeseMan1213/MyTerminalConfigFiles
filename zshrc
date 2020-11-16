@@ -37,5 +37,9 @@ alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
 alias issb='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppBackend'
 alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppInfrastructure'
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-lts-java11-19.3.3/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.2.0/Contents/Home
+
+
 
