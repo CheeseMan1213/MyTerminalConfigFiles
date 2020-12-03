@@ -1,6 +1,64 @@
 {
+    "editor.fontSize": 14,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 1,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "python.languageServer": "Microsoft",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+        "Jenkinsfile": "groovy"
+    },
     /*Vim Settings*/
     /*Simply give the location of your '.vimrc' file.*/
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "/Users/jameshawley/.vimrc"
+    "vim.vimrc.path": "/Users/jameshawley/.vimrc",
+    /*Dart settings*/
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    /*My tab settings*/
+    // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+    // will be detected based on the file contents. Set to false to keep
+    // the values you've explicitly set, above.
+    "editor.detectIndentation": false,
+    // The number of spaces a tab is equal to. This setting is overridden
+    // based on the file contents when `editor.detectIndentation` is true.
+    "editor.tabSize": 4,
+    // Insert spaces when pressing Tab. This setting is overriden
+    // based on the file contents when `editor.detectIndentation` is true.
+	"editor.insertSpaces": false,
+	"workbench.editor.enablePreview": false,
+	"rsp-ui.enableStartServerOnActivation": [
+		{
+			"id": "redhat.vscode-community-server-connector",
+			"name": "Community Server Connector",
+			"startOnActivation": true
+		}
+	],
+	"java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+	"java.configuration.runtimes": [
+		{
+			"name": "JavaSE-1.8",
+			"path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+		}
+	],
 }
