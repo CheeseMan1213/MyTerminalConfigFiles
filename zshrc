@@ -5,6 +5,8 @@ fg_cyan=%{$'\e[0;36m'%}
 at_normal=%{$'\e[0m'%}
 fg_blue=%{$'\e[0;34m'%}
 
+alias la="ls -al"
+
 PROMPT="${fg_yellow}%n${fg_red}@%m${fg_white}[${fg_cyan}%1d${fg_white}] - ${at_normal}"
 RPROMPT="%F${fg_yellow}%D{%e.%b.%y %H:%M}%f${at_normal}"
 PROMPT2="${fg_blue} %_ >>${at_normal}"
