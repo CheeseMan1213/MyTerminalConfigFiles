@@ -96,3 +96,5 @@ set smartindent
 
 " Enable spell checking for plaintext files only
 autocmd FileType text setlocal spell
+
+set pastetoggle=<F3>
