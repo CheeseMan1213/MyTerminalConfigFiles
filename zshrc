@@ -6,6 +6,7 @@ at_normal=%{$'\e[0m'%}
 fg_blue=%{$'\e[0;34m'%}
 
 alias la="ls -al"
+alias gs="git status"
 
 PROMPT="${fg_yellow}%n${fg_red}@%m${fg_white}[${fg_cyan}%1d${fg_white}] - ${at_normal}"
 RPROMPT="%F${fg_yellow}%D{%e.%b.%y %H:%M}%f${at_normal}"
@@ -23,6 +24,7 @@ setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
 
+export PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin:$PATH"
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin"
 export PATH="$PATH:/Users/jameshawley/.composer/vendor/bin"
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin/cache/dart-sdk/bin"
@@ -42,7 +44,9 @@ alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackin
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-lts-java11-19.3.3/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.2.0/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+# export JAVA_HOME=/usr/local/opt/openjdk@11
 export PATH="$PATH:/Users/jameshawley/apache-servicemix-7.0.1/bin"
 
 
