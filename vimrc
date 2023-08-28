@@ -95,6 +95,6 @@ hi CursorLine term=bold cterm=bold  guibg=Grey40
 set smartindent
 
 " Enable spell checking for plaintext files only
-autocmd FileType text setlocal spell
+" autocmd FileType text setlocal spell
 
 set pastetoggle=<F3>

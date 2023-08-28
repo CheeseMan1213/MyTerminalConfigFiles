@@ -1,3 +1,17 @@
+# Turn on vim mode.
+# bindkey -v
+# bindkey "^?" backward-delete-char
+# export KEYTIMEOUT=1
+
+# function zle-line-init zle-keymap-select {
+#     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#     RPS2=$RPS1
+#     zle reset-prompt
+# }
+
+# zle -N zle-line-init
+# zle -N zle-keymap-select
+
 fg_yellow=%{$'\e[1;33m'%}
 fg_red=%{$'\e[0;31m'%}
 fg_white=%{$'\e[1;37m'%}
@@ -15,16 +29,16 @@ PROMPT2="${fg_blue} %_ >>${at_normal}"
 ##############################################################################
 # History Configuration
 ##############################################################################
-HISTSIZE=5000               #How many lines of history to keep in memory
+HISTSIZE=10000               #How many lines of history to keep in memory
 HISTFILE=~/.zsh_history     #Where to save history to disk
-SAVEHIST=5000               #Number of history entries to save to disk
-#HISTDUP=erase               #Erase duplicates in the history file
+SAVEHIST=10000               #Number of history entries to save to disk
+HISTDUP=erase               #Erase duplicates in the history file
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
 
-export PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin:$PATH"
+# export PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin:$PATH"
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin"
 export PATH="$PATH:/Users/jameshawley/.composer/vendor/bin"
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin/cache/dart-sdk/bin"
@@ -36,6 +50,7 @@ export NVM_DIR="$HOME/.nvm"
 export AWS_SDK_LOAD_CONFIG=1
 export AWS_SHARED_CREDENTIALS_FILE=$HOME/.aws/credentials
 export AWS_CONFIG_FILE=$HOME/.aws/config
+export DOCKER_HOST='unix:///Users/jameshawleyii/.docker/run/docker.sock'
 
 alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
@@ -45,9 +60,10 @@ alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackin
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-lts-java11-19.3.3/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.2.0/Contents/Home
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
-# export JAVA_HOME=/usr/local/opt/openjdk@11
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+export JAVA_HOME=/usr/local/opt/openjdk@17
 export PATH="$PATH:/Users/jameshawley/apache-servicemix-7.0.1/bin"
+export PATH="$PATH:/usr/local/opt/openjdk@17/bin"
 
 
-
+export PATH="/usr/local/sbin:$PATH"
