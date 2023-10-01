@@ -81,11 +81,11 @@ onoremap <silent> <expr> k ScreenMovement("k")
 onoremap <silent> <expr> 0 ScreenMovement("0")
 onoremap <silent> <expr> ^ ScreenMovement("^")
 onoremap <silent> <expr> $ ScreenMovement("$")
-nnoremap <silent> <expr> j ScreenMovement("j")
-nnoremap <silent> <expr> k ScreenMovement("k")
-nnoremap <silent> <expr> 0 ScreenMovement("0")
-nnoremap <silent> <expr> ^ ScreenMovement("^")
-nnoremap <silent> <expr> $ ScreenMovement("$")
+"nnoremap <silent> <expr> j ScreenMovement("j")
+"nnoremap <silent> <expr> k ScreenMovement("k")
+"nnoremap <silent> <expr> 0 ScreenMovement("0")
+"nnoremap <silent> <expr> ^ ScreenMovement("^")
+"nnoremap <silent> <expr> $ ScreenMovement("$")
 
 color default
 set cursorline
