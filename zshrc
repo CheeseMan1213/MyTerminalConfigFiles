@@ -21,6 +21,7 @@ fg_blue=%{$'\e[0;34m'%}
 
 alias la="ls -al"
 alias gs="git status"
+alias k="kubectl"
 
 PROMPT="${fg_yellow}%n${fg_red}@%m${fg_white}[${fg_cyan}%1d${fg_white}] - ${at_normal}"
 RPROMPT="%F${fg_yellow}%D{%e.%b.%y %H:%M}%f${at_normal}"
@@ -67,3 +68,4 @@ export PATH="$PATH:/usr/local/opt/openjdk@17/bin"
 
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
