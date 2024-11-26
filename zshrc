@@ -1,17 +1,3 @@
-# Turn on vim mode.
-# bindkey -v
-# bindkey "^?" backward-delete-char
-# export KEYTIMEOUT=1
-
-# function zle-line-init zle-keymap-select {
-#     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-#     RPS2=$RPS1
-#     zle reset-prompt
-# }
-
-# zle -N zle-line-init
-# zle -N zle-keymap-select
-
 fg_yellow=%{$'\e[1;33m'%}
 fg_red=%{$'\e[0;31m'%}
 fg_white=%{$'\e[1;37m'%}
@@ -26,6 +12,11 @@ alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
 alias issb='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppBackend'
 alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppInfrastructure'
+alias pdpr='cd /Users/jameshawley/MyCodingProjects/RustPractice/practice-data-processing'
+alias pdpf='cd /Users/jameshawley/MyCodingProjects/RustPractice/practice-data-processing/frontend'
+alias pdpb='cd /Users/jameshawley/MyCodingProjects/RustPractice/practice-data-processing/backend'
+alias pdpi='cd /Users/jameshawley/MyCodingProjects/RustPractice/practice-data-processing/infrastructure'
+alias pdph='cd /Users/jameshawley/MyCodingProjects/RustPractice/practice-data-processing/helm_charts'
 
 PROMPT="${fg_yellow}%n${fg_red}@%m${fg_white}[${fg_cyan}%1d${fg_white}] - ${at_normal}"
 RPROMPT="%F${fg_yellow}%D{%e.%b.%y %H:%M}%f${at_normal}"
@@ -34,13 +25,15 @@ PROMPT2="${fg_blue} %_ >>${at_normal}"
 ##############################################################################
 # History Configuration
 ##############################################################################
-HISTSIZE=10000               #How many lines of history to keep in memory
-HISTFILE=~/.zsh_history     #Where to save history to disk
-SAVEHIST=10000               #Number of history entries to save to disk
-HISTDUP=erase               #Erase duplicates in the history file
-setopt    appendhistory     #Append history to the history file (no overwriting)
-setopt    sharehistory      #Share history across terminals
-setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=200000
+HISTDUP=erase                # Erase duplicates in the history file.
+setopt hist_ignore_dups      # Ignore duplicate commands.
+setopt hist_reduce_blanks    # Remove superfluous blanks.
+setopt appendhistory         # Append history instead of overwriting.
+setopt sharehistory          # Share history across all sessions.
+setopt incappendhistory      # Immediately append to the history file, not just when a term is killed.
 
 
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin"

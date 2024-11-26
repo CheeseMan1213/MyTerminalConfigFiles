@@ -7,15 +7,13 @@ fi
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# Set the history file name and configure its behavior
-HISTFILE=~/.bash_history
-HISTFILESIZE=10000
-HISTCONTROL=ignoredups
-shopt -s histappend
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-
-# Append to the history file instead of overwriting
-shopt -s histappend
+# Configure bash history file behavior.
+HISTFILE=~/.bash_history                    # Set the history file name.
+HISTSIZE=100000                             # Set the number of commands to remember in the history list.
+HISTFILESIZE=200000                         # Set the number of lines contained in the history file.
+HISTCONTROL=ignoredups:erasedups            # Ignore duplicate commands and erase duplicates in the history list.
+shopt -s histappend                         # Append to the history file, don't overwrite it.
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND" # Append commands to the history file after each command is entered.
 
 # Define aliases
 alias gs="git status"
