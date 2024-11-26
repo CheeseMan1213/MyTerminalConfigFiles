@@ -70,11 +70,11 @@ set backspace=indent,eol,start
 
 " mapping to make movements operate on 1 screen line in wrap mode
 function! ScreenMovement(movement)
-   if &wrap
-      return "g" . a:movement
-   else
-      return a:movement
-   endif
+  if &wrap
+    return "g" . a:movement
+  else
+    return a:movement
+  endif
 endfunction
 onoremap <silent> <expr> j ScreenMovement("j")
 onoremap <silent> <expr> k ScreenMovement("k")

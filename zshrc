@@ -22,6 +22,10 @@ fg_blue=%{$'\e[0;34m'%}
 alias la="ls -al"
 alias gs="git status"
 alias k="kubectl"
+alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
+alias issb='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppBackend'
+alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppInfrastructure'
 
 PROMPT="${fg_yellow}%n${fg_red}@%m${fg_white}[${fg_cyan}%1d${fg_white}] - ${at_normal}"
 RPROMPT="%F${fg_yellow}%D{%e.%b.%y %H:%M}%f${at_normal}"
@@ -39,7 +43,6 @@ setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
 
-# export PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin:$PATH"
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin"
 export PATH="$PATH:/Users/jameshawley/.composer/vendor/bin"
 export PATH="$PATH:/Users/jameshawley/FlutterSDK/flutter/bin/cache/dart-sdk/bin"
@@ -51,21 +54,11 @@ export NVM_DIR="$HOME/.nvm"
 export AWS_SDK_LOAD_CONFIG=1
 export AWS_SHARED_CREDENTIALS_FILE=$HOME/.aws/credentials
 export AWS_CONFIG_FILE=$HOME/.aws/config
-export DOCKER_HOST='unix:///Users/jameshawleyii/.docker/run/docker.sock'
-
-alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
-alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
-alias issb='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppBackend'
-alias issi='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppInfrastructure'
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-lts-java11-19.3.3/Contents/Home
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.2.0/Contents/Home
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
-export JAVA_HOME=/usr/local/opt/openjdk@17
-export PATH="$PATH:/Users/jameshawley/apache-servicemix-7.0.1/bin"
+# export DOCKER_HOST='unix:///Users/jameshawleyii/.docker/run/docker.sock'
+export JAVA_HOME=/opt/homebrew/opt/openjdk@17
 export PATH="$PATH:/usr/local/opt/openjdk@17/bin"
-
-
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
+export PATH="$PATH:/Users/jameshawley/.docker/bin"
+
