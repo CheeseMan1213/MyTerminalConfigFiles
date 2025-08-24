@@ -6,7 +6,10 @@ at_normal=%{$'\e[0m'%}
 fg_blue=%{$'\e[0;34m'%}
 
 alias la="ls -al"
-alias gs="git status"
+alias gs="git st"
+alias lg="git lg"
+alias last="git last"
+alias hist="git hist"
 alias k="kubectl"
 alias ic='cd /Users/jameshawley/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias issf='cd /Users/jameshawley/MyCodingProjects/IssueTrackingApp/IssueTrackingAppFrontend/issue-tracking-app-frontend'
